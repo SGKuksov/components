@@ -18,7 +18,7 @@ module.exports = {
   },
   scripts: {
     app: resolve(__dirname, '../src/app.ts'),
-    main: resolve(__dirname, '../src/index.ts'),
+    modal: resolve(__dirname, '../src/modal/Modal.ts'),
     watch: [`src/**/*.{js,ts}`],
     output: resolve(__dirname, '../dist'),
     todo: {
@@ -28,7 +28,7 @@ module.exports = {
     },
   },
   styles: {
-    input: `src/**/*.scss`,
+    input: `src/**/index.scss`,
     watch: [`src/**/*.scss`],
     output: `dist/`,
     todo: {

@@ -8,7 +8,7 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
     app: config.scripts.app,
-    main: config.scripts.main,
+    modal: config.scripts.modal,
   },
   output: {
     path: config.scripts.output,
