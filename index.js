@@ -1,4 +1,5 @@
 /*
  Подключить все скриптовые файлы для раздельного экспорта
  */
-// export { default as Modal } from './dist/modal';
+
+export { default as Modal } from './dist/app';
