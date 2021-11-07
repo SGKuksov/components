@@ -1,20 +1,16 @@
 {
   "name": "components",
-  "main": "dist/app.js",
-  "sideEffects": false,
-  "version": "1.0.0",
   "description": "Start kit with gulp and webpack",
+  "version": "1.0.0",
+  "author": "Sergei Kuksov",
+  "license": "MIT",
+  "main": "dist/app.js",
+  "module": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp",
     "start": "cross-env NODE_ENV=development gulp",
     "build": "cross-env NODE_ENV=production gulp"
   },
-  "browserslist": [
-    "> 1%",
-    "last 3 version"
-  ],
-  "author": "Sergei Kuksov",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-class-properties": "^7.16.0",
@@ -68,5 +64,9 @@
     "jquery": "^3.6.0",
     "scroll-lock": "^2.1.5",
     "web-vitals": "^2.1.2"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ]
 }

@@ -5,12 +5,7 @@ const config = require("./config");
 const webpackConfig = require("../webpack.config");
 
 const javascript = () =>
-  src([
-    config.scripts.app,
-    config.scripts.dropdown,
-    config.scripts.form,
-    config.scripts.modal
-  ])
+  src(config.scripts.app)
     .pipe(plumber(config.notify))
     .pipe(webpack(webpackConfig))
     .pipe(dest(config.scripts.output));

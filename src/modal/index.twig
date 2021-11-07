@@ -1,3 +1,23 @@
-{#
-Тут вывести пример вызова компонента
- #}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modals</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    {# Тут вывести пример вызова компонента #}
+    {% include './modal.twig' with {
+        modalId: 'modal1',
+        modalTitle: 'Title title',
+        modalContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum fugit labore praesentium quae! Ad adipisci, blanditiis consequatur consequuntur, culpa eius eligendi facere laboriosam modi nostrum perferendis quae quas, reprehenderit.'
+    } %}
+
+    <button data-modal-open="modal1">Открыть модальное окно</button>
+
+    <script src="/main.js"></script>
+</body>
+</html>

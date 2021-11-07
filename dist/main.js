@@ -1150,6 +1150,27 @@ return /******/ (function() { // webpackBootstrap
 
 /***/ }),
 
+/***/ "./src/app.ts":
+/*!********************!*\
+  !*** ./src/app.ts ***!
+  \********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Modal": function() { return /* reexport safe */ _modal_Modal__WEBPACK_IMPORTED_MODULE_0__.Modal; }
+/* harmony export */ });
+/* harmony import */ var _modal_Modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal/Modal */ "./src/modal/Modal.ts");
+/*
+  Экспортировать все компоненты для сборки общего скрипта
+ */
+
+
+
+
+/***/ }),
+
 /***/ "./src/modal/Modal.ts":
 /*!****************************!*\
   !*** ./src/modal/Modal.ts ***!
@@ -1394,23 +1415,16 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
-/*!********************!*\
-  !*** ./src/app.ts ***!
-  \********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Modal": function() { return /* reexport safe */ _modal_Modal__WEBPACK_IMPORTED_MODULE_0__.Modal; }
-/* harmony export */ });
-/* harmony import */ var _modal_Modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal/Modal */ "./src/modal/Modal.ts");
-/*
-  Экспортировать все компоненты для сборки общего скрипта
- */
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
 
-
+const { Modal } = __webpack_require__(/*! ./app */ "./src/app.ts");
+Modal().init();
 
 }();
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=main.js.map

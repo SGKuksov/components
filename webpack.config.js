@@ -8,16 +8,15 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
     app: config.scripts.app,
-    // dropdown: config.scripts.dropdown,
-    // form: config.scripts.form,
-    // modal: config.scripts.modal
+    main: config.scripts.main,
   },
   output: {
     path: config.scripts.output,
     filename: '[name].js',
-    // libraryTarget: 'umd',
-    library: 'components',
-    umdNamedDefine: true
+    library: {
+      name: 'components',
+      type: 'umd',
+    },
   },
   devtool: isDev ? 'source-map' : false,
   module: {

@@ -18,12 +18,7 @@ module.exports = {
   },
   scripts: {
     app: resolve(__dirname, '../src/app.ts'),
-
-    // TODO Fix this for each folder
-    dropdown: resolve(__dirname, '../src/dropdown/Dropdown.ts'),
-    form: resolve(__dirname, '../src/form/Form.ts'),
-    modal: resolve(__dirname, '../src/modal/Modal.ts'),
-
+    main: resolve(__dirname, '../src/index.ts'),
     watch: [`src/**/*.{js,ts}`],
     output: resolve(__dirname, '../dist'),
     todo: {
@@ -43,7 +38,7 @@ module.exports = {
     },
   },
   templates: {
-    input: `src/**/*.twig`,
+    input: `src/**/index.twig`,
     watch: [`src/**/*.twig`],
     temp: `temp`,
     output: `dist/`,
