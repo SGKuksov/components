@@ -1,6 +1,5 @@
 {
   "name": "components",
-  "main": "dist/app.js",
   "module": "dist/esm/",
   "sideEffects": false,
   "version": "1.0.0",

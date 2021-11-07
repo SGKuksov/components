@@ -162,6 +162,8 @@ const Modal = (type = 'default') => {
   }
 
   function init() {
+    console.log('Init!!!!');
+
     document.addEventListener('click', documentClickHandler);
     document.addEventListener('keyup', documentKeyupHandler);
   }
