@@ -1,0 +1,9 @@
+/*
+  Добавлять все стилевые файлы для подключения всех вместе
+ */
+@import 'mixins';
+@import 'variables';
+
+@import './dropdown/dropdown';
+@import './form/form';
+@import './modal/modal';
