@@ -7,7 +7,7 @@ module.exports = {
   context: process.cwd(),
   mode: process.env.NODE_ENV,
   entry: {
-    app: config.scripts.app,
+    // app: config.scripts.app,
     dropdown: config.scripts.dropdown,
     form: config.scripts.form,
     modal: config.scripts.modal
