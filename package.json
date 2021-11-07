@@ -1,5 +1,8 @@
 {
-  "name": "boilerplate",
+  "name": "components",
+  "main": "dist/app.js",
+  "module": "dist/esm/",
+  "sideEffects": false,
   "version": "1.0.0",
   "description": "Start kit with gulp and webpack",
   "scripts": {

@@ -15,6 +15,9 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: config.scripts.output,
+    library: ['components'],
+    libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   devtool: isDev ? 'source-map' : false,
   module: {
