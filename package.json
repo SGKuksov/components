@@ -5,7 +5,7 @@
   "author": "Sergei Kuksov",
   "license": "MIT",
   "main": "dist/app.js",
-  "module": "index.js",
+  "module": "src/app.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp",
     "start": "cross-env NODE_ENV=development gulp",
