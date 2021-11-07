@@ -7,17 +7,17 @@ module.exports = {
   context: process.cwd(),
   mode: process.env.NODE_ENV,
   entry: {
-    // app: config.scripts.app,
-    dropdown: config.scripts.dropdown,
-    form: config.scripts.form,
-    modal: config.scripts.modal
+    app: config.scripts.app,
+    // dropdown: config.scripts.dropdown,
+    // form: config.scripts.form,
+    // modal: config.scripts.modal
   },
   output: {
-    filename: '[name].js',
     path: config.scripts.output,
-    library: ['components'],
-    libraryTarget: 'umd',
-    libraryExport: 'default',
+    filename: '[name].js',
+    // libraryTarget: 'umd',
+    library: 'components',
+    umdNamedDefine: true
   },
   devtool: isDev ? 'source-map' : false,
   module: {

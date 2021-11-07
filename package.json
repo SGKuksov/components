@@ -1,6 +1,6 @@
 {
   "name": "components",
-  "main": "index.js",
+  "main": "dist/app.js",
   "sideEffects": false,
   "version": "1.0.0",
   "description": "Start kit with gulp and webpack",

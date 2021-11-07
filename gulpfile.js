@@ -35,7 +35,7 @@ if (isDev) {
       javascript,
       scss
     ),
-    twig
+    // twig
     // copyStatic,
     // svgspritehtml
   );
